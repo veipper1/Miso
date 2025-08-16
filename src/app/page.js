@@ -7,6 +7,14 @@ const Home = () => {
 
   return (
     <div className="bg-[#EBE3D8] h-auto w-full text-black font-inter">
+      <div className="fixed bottom-[50px] right-[20px] rotate-12 ">
+        <Image
+          src="/Mobile_Soon.png"
+          alt="Mascot saying that mobile version is coming soon"
+          width={200}
+          height={200}
+        />
+      </div>
       <div className="lg:w-[70%] flex mx-auto w-[100%] pt-[64px] pb-[64px] gap-[30px]">
         <div className="w-[10%] flex flex-col justify-between items-center">
           <div className="flex flex-col items-center gap-[30px] ">
@@ -168,7 +176,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[30%] flex justify-end">
+            <div className="w-[33%] flex justify-end">
               <img
                 src="/Footer_Image.png"
                 alt="Brand label"
