@@ -1,17 +1,10 @@
 import "./globals.css";
-import { Inter, Noto_Sans_JP } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const notoJP = Noto_Sans_JP({
-  subsets: ["latin", "japanese"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-noto",
   display: "swap",
 });
 
@@ -23,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${notoJP.variable}`}>
+    <html lang="en" className={`${inter.variable}`}>
       <body>{children}</body>
     </html>
   );
