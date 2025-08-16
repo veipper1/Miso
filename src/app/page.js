@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="bg-[#EBE3D8] h-auto w-full text-black font-inter">
-      <div className="fixed bottom-[50px] right-[20px] rotate-12 ">
+      <div className="fixed bottom-[50px] right-[20px] rotate-12  z-9999">
         <Image
           src="/Mobile_Soon.png"
           alt="Mascot saying that mobile version is coming soon"
