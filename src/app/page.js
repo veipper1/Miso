@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="bg-[#EBE3D8] h-auto w-full text-black font-inter">
-      <div className="lg:w-[70%] flex mx-auto w-[100%] lg:pt-[64px] pb-[64px] gap-[30px]">
+      <div className="lg:w-[70%] w-screen flex mx-auto lg:pt-[64px] pb-[64px] gap-[30px]">
         {/* ---side bar--- */}
         <div className="w-[10%] hidden lg:flex lg:flex-col lg:justify-between lg:items-center">
           <div className="flex flex-col items-center gap-[30px] ">
