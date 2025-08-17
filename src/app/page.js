@@ -69,8 +69,23 @@ const Home = () => {
             </div>
           </div>
           {/* ---banner area --- */}
+          <div className="lg:hidden flex mx-[20px] items-center justify-between mb-[-24px]">
+            <div className="flex items-center gap-[12px]">
+              <div className="text-[40px] leading-[50px] font-black">MISO</div>
+              <div className="text-[12px] leading-[14px]">
+                Life’s a buffet, and Miso’s <br /> already halfway through it.
+              </div>
+            </div>
+            <Image
+              src="/Green_Oval.png"
+              alt="Green oval with japanese text"
+              width={68}
+              height={32}
+              className="w-[68px] h-[32px]"
+            />
+          </div>
 
-          <div className="flex lg:flex-row flex-col items-center gap-[16px] lg:justify-between lg:w-full">
+          <div className="flex lg:flex-row mx-[20px] lg:mx-0 flex-col items-center gap-[16px] lg:justify-between lg:w-full">
             <div className="relative">
               <Image
                 src="/Mascot_Eating_Ramen.png"
