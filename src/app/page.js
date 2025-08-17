@@ -68,7 +68,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex items-center justify-end  bg-black">
-              <div className="z-9999 text-white  bg-black text-[23px] text-center font-black py-[30px] ">
+              <div className="z-9999 text-white  bg-black text-[23px] text-center font-black py-[30px] pr-[20px] ">
                 味噌（ミソ）の“世界を食べ尽くす旅”は終わらない——ひと口（とモグモグ）ずつ、全部味見していくぞ。
               </div>
             </div>
