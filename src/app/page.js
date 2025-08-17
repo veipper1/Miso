@@ -69,6 +69,26 @@ const Home = () => {
             </div>
           </div>
           {/* ---banner area --- */}
+          <div className="lg:hidden">
+            <div className="flex justify-end z-9999">
+              <div className="text-[36px] z-9999 font-black text-white bg-black rounded-tl-[50px] pl-[15px] pr-[10px] ml-[15px] pt-[15px]">
+                いただきます
+              </div>
+            </div>
+            <div className="relative overflow-hidden w-screen bg-black">
+              <div className="flex w-max will-change-transform animate-[marquee_15s_linear_infinite]">
+                {[...Array(2)].map((_, i) => (
+                  <span
+                    key={i}
+                    className="shrink-0 whitespace-nowrap px-4 py-[15px] text-white text-[23px] font-black"
+                  >
+                    味噌（ミソ）の“世界を食べ尽くす旅”は終わらない——ひと口（とモグモグ）ずつ、全部味見していくぞ。
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="lg:hidden flex mx-[20px] items-center justify-between mb-[-24px]">
             <div className="flex items-center gap-[12px]">
               <div className="text-[40px] leading-[50px] font-black">MISO</div>
