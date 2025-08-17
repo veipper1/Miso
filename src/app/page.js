@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="bg-[#EBE3D8] h-auto w-full text-black font-inter">
-      <div className="lg:w-[70%] flex mx-auto w-[100%] pt-[64px] pb-[64px] gap-[30px]">
+      <div className="lg:w-[70%] flex mx-auto w-[100%] lg:pt-[64px] pb-[64px] gap-[30px]">
         {/* ---side bar--- */}
         <div className="w-[10%] hidden lg:flex lg:flex-col lg:justify-between lg:items-center">
           <div className="flex flex-col items-center gap-[30px] ">
@@ -69,7 +69,35 @@ const Home = () => {
             </div>
           </div>
           {/* ---banner area --- */}
-          <div className="lg:hidden">
+          <div className="lg:hidden relative">
+            <div className="text-[130px] font-black text-center absolute top-[-30px] left-0 right-0">
+              MISO
+            </div>
+            <div className="w-screen h-auto my-[450px]"></div>
+            <div className="absolute top-[100px] left-[-20px]">
+              <Image
+                src="/Mascot_Only_Banner.png"
+                alt="Mascot Banner"
+                width={461}
+                height={514}
+              />
+            </div>
+            <div className="absolute bottom-[200px] right-[15px]">
+              <Image
+                src="/Mascot_Small.png"
+                alt="Small mascot"
+                width={142}
+                height={102}
+              />
+            </div>
+            <div className="absolute top-[130px] right-[10px]">
+              <Image
+                src="/Dark_Orange_Eat_Box.png"
+                alt="Dark orange eat box"
+                width={113}
+                height={52}
+              />
+            </div>
             <div className="flex justify-end z-9999">
               <div className="text-[36px] z-9999 font-black text-white bg-black rounded-tl-[50px] pl-[15px] pr-[10px] ml-[15px] pt-[15px]">
                 いただきます
