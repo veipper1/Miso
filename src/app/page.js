@@ -7,16 +7,9 @@ const Home = () => {
 
   return (
     <div className="bg-[#EBE3D8] h-auto w-full text-black font-inter">
-      <div className="fixed bottom-[50px] right-[20px] rotate-12  z-9999">
-        <Image
-          src="/Mobile_Soon.png"
-          alt="Mascot saying that mobile version is coming soon"
-          width={200}
-          height={200}
-        />
-      </div>
       <div className="lg:w-[70%] flex mx-auto w-[100%] pt-[64px] pb-[64px] gap-[30px]">
-        <div className="w-[10%] flex flex-col justify-between items-center">
+        {/* ---side bar--- */}
+        <div className="w-[10%] hidden lg:flex lg:flex-col lg:justify-between lg:items-center">
           <div className="flex flex-col items-center gap-[30px] ">
             <span className="[writing-mode:vertical-rl] font-extrabold text-[105px] leading-[105px]">
               MISO
@@ -40,11 +33,13 @@ const Home = () => {
             <div className="w-[54px] h-[54px] bg-black rounded-full" />
           </div>
         </div>
+        {/* --- side bar --- */}
         <div className="flex-1 flex flex-col gap-[40px]">
-          <span className="font-inter inline-block text-[271px] leading-none -mt-[37px] font-extrabold align-text-top">
+          {/* ---banner area --- */}
+          <span className="lg:inline-block hidden text-[271px] leading-none -mt-[37px] font-extrabold align-text-top">
             MISO
           </span>
-          <div className="relative">
+          <div className="lg:relative lg:block hidden">
             <div className="absolute top-[-304px] right-[175px] z-1">
               <Image
                 src="/Mascot_Banner.png"
@@ -73,21 +68,24 @@ const Home = () => {
               </div>
             </div>
           </div>
+          {/* ---banner area --- */}
 
-          <div className="flex justify-between w-full">
+          <div className="flex lg:flex-row flex-col items-center gap-[16px] lg:justify-between lg:w-full">
             <div className="relative">
               <Image
                 src="/Mascot_Eating_Ramen.png"
                 alt="Mascot eating ramen"
                 width={380}
                 height={380}
+                className="w-[342px] h-[342px] lg:w-[380px] lg:h-[380px]"
               />
-              <div className="absolute top-[20px] right-[-20%] z-10">
+              <div className="absolute top-[20px] lf:right-[-20%] right-[15px] z-10">
                 <Image
                   src="/Orange_Box.png"
                   alt="Orange box with japanese text"
                   width={173}
                   height={81}
+                  className="w-[156px] h-[73px] lg:w-[173px] lg:h-[81px]"
                 />
               </div>
             </div>
@@ -97,6 +95,7 @@ const Home = () => {
                 alt="Mascot bowl"
                 width={380}
                 height={380}
+                className="w-[342px] h-[342px] lg:w-[380px] lg:h-[380px]"
               />
               <div className="absolute bottom-[35px] left-[20px]">
                 <Image
@@ -104,6 +103,7 @@ const Home = () => {
                   alt="Yellow box with japanese text"
                   width={173}
                   height={81}
+                  className="w-[156px] h-[73px] lg:w-[173px] lg:h-[81px]"
                 />
               </div>
             </div>
@@ -114,6 +114,7 @@ const Home = () => {
                   alt="Tonkatsu bowl"
                   width={380}
                   height={380}
+                  className="w-[342px] h-[342px] lg:w-[380px] lg:h-[380px]"
                 />
               </div>
               <div className="absolute bottom-[10px] right-[10px]">
@@ -122,6 +123,7 @@ const Home = () => {
                   alt="Green oval with japanese text"
                   width={173}
                   height={81}
+                  className="w-[156px] h-[73px] lg:w-[173px] lg:h-[81px]"
                 />
               </div>
             </div>
@@ -143,7 +145,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full bg-black text-white font-extrabold text-[35px] text-center py-[13px]">
+          <div className="lg:w-full bg-black text-white font-extrabold lg:text-[35px] text-[30px] mx-[20px] lg:mx-0 text-center py-[13px]">
             <span>CA: COMING SOON.</span>
           </div>
           <div className="w-[100%]">
@@ -157,26 +159,27 @@ const Home = () => {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex w-full gap-[68px]">
+          {/* --- footer area --- */}
+          <div className="flex lg:flex-row flex-col w-full gap-[68px]">
             <div className="flex flex-col justify-between w-full">
-              <div className="flex gap-[45px]">
-                <div className="bg-black whitespace-nowrap text-white font-extrabold text-[24px] text-center py-[13px] px-[25px]">
+              <div className="flex lg:flex-row flex-col gap-[12px] lg:gap-[45px]">
+                <div className="bg-black whitespace-nowrap text-white font-extrabold text-[24px] text-center py-[13px] px-[25px] mx-[20px] lg:mx-0">
                   <span>Big Bags - Bigger Bellies</span>
                 </div>
-                <div className="w-full font-noto-sans font-extrabold text-[35px]">
+                <div className="w-full font-noto-sans font-extrabold text-[35px] text-center lg:text-left pb-[20px] lg:pb-0">
                   <span>いただきます</span>
                 </div>
               </div>
-              <div className="w-full border flex justify-between items-center border-black">
-                <div className="font-extrabold text-[24px] py-[13px] px-[25px]">
+              <div className="lg:w-full border flex lg:flex-row gap-[40px] lg:gap-0 flex-col justify-between items-center border-black mx-[32px] lg:mx-0">
+                <div className="font-extrabold text-[24px] pt-[7px] lg:py-[13px] px-[25px]">
                   <span>BUY HERE:</span>
                 </div>
-                <div className="font-extrabold text-[30px] px-[25px]">
+                <div className="font-extrabold text-[30px] px-[25px] pb-[7px]">
                   <span>MISO</span>
                 </div>
               </div>
             </div>
-            <div className="w-[33%] flex justify-end">
+            <div className="lg:w-[33%] flex justify-center lg:justify-end">
               <img
                 src="/Footer_Image.png"
                 alt="Brand label"
@@ -184,6 +187,7 @@ const Home = () => {
               />
             </div>
           </div>
+          {/* ---footer area --- */}
         </div>
       </div>
     </div>
