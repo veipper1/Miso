@@ -98,7 +98,7 @@ const Home = () => {
                 width={380}
                 height={380}
               />
-              <div className="absolute bottom-[50px] left-[20px]">
+              <div className="absolute bottom-[35px] left-[20px]">
                 <Image
                   src="/Yellow_Box.png"
                   alt="Yellow box with japanese text"
@@ -116,7 +116,7 @@ const Home = () => {
                   height={380}
                 />
               </div>
-              <div className="absolute bottom-[10px] right-[15px]">
+              <div className="absolute bottom-[10px] right-[10px]">
                 <Image
                   src="/Green_Oval.png"
                   alt="Green oval with japanese text"
