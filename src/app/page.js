@@ -251,6 +251,13 @@ const Home = () => {
             </div>
           </div>
           {/* ---footer area --- */}
+          <div className="flex flex-col items-center lg:hidden gap-[24px]">
+            <div className="text-[23px] font-black">Keep It Chomping'</div>
+            <div className="flex gap-[24px]">
+              <div className="w-[54px] h-[54px] bg-black rounded-full" />
+              <div className="w-[54px] h-[54px] bg-black rounded-full" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
