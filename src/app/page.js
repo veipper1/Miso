@@ -6,7 +6,7 @@ const Home = () => {
   useLenis();
 
   return (
-    <div className="bg-[#EBE3D8] h-auto w-screen text-black font-inter">
+    <div className="bg-[#EBE3D8] text-black font-inter">
       <div className="lg:w-[70%] w-screen flex mx-auto lg:pt-[64px] pb-[64px] gap-[30px]">
         {/* ---side bar--- */}
         <div className="w-[10%] hidden lg:flex lg:flex-col lg:justify-between lg:items-center">
